@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    tools:context=".ui.PatientDetailActivity">
+
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="192dp"
+        android:drawableStart="@drawable/ic_account_box_black_24dp"
+        android:drawableLeft="@drawable/ic_account_box_black_24dp"
+        android:drawablePadding="5dp"
+        android:text="@string/patient_details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="192dp" />
+
+    <ImageView
+        android:id="@+id/imageViewReg"
+        android:layout_width="110dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_rectangle"
+        android:contentDescription="Patient Photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="33dp"
+        android:gravity="right"
+        android:text="@string/patient_id"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReg"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textViewPid"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_rectangle"
+        android:gravity="left"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scrollHorizontally="true"
+        android:text="PID- 123456"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/imageViewReg"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="379dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="@string/patient_name" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scrollHorizontally="true"
+                android:text="                                                      "
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="@string/date_of_birth"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewDob"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_rectangle"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="16dp"
+                android:scrollHorizontally="true"
+                android:text="                                                      "
+                android:textIsSelectable="true"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="@string/gender" />
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_rectangle"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scrollHorizontally="true"
+                android:text="                       "
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="@string/address" />
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scrollHorizontally="true"
+                android:text="                                                          "
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="@string/phone_mobile_no" />
+
+            <TextView
+                android:id="@+id/textViewMob"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/rounded_rectangle"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scrollHorizontally="true"
+                android:text="                                        "
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="right"
+                android:text="@string/e_mail" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_rectangle"
+                android:gravity="left"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scrollHorizontally="true"
+                android:text="                                        "
+                android:textIsSelectable="true" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewReg" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginRight="138dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/rounded_shape_button"
+        android:drawableStart="@drawable/ic_navigate_before_black_24dp"
+        android:drawableLeft="@drawable/ic_navigate_before_black_24dp"
+        android:onClick="callBack"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

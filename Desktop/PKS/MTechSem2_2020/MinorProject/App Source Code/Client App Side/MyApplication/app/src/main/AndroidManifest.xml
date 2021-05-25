@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <!-- this is the internet permission -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_hema"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ui.ShowBroadHeadacheGroupQueActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.ShowBroadHeadacheGroupQueActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.QueBroadHeadacheGroupActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.QueBroadHeadacheGroupActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.RegisterPatientActivity" />
+        <activity android:name=".admin.AdminTestReportActivity" />
+        <activity
+            android:name=".admin.AdminHomeActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.admin.AdminHomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ShowMigQueActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.ShowMigQueActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.QueMigActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.QueMigActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.AboutActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.AboutActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PatientDetailActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.PatientDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ViewHistoryActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.ViewHistoryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.HistoryActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.HistoryActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ResultActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.ResultActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.QueActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.QueActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PatientHomeActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myapplication.ui.PatientHomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

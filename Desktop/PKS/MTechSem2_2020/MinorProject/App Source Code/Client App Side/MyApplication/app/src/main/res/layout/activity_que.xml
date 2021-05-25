@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#56B2EBF2"
+    tools:context="com.example.myapplication.ui.QueActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="169dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_rectangle_blue_bg"
+        android:paddingLeft="4sp"
+        android:paddingTop="4sp"
+        android:paddingRight="4sp"
+        android:paddingBottom="4sp"
+        android:radius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLevelQueUI">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewQue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:text="Que. Do you have headache?"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_rectangle_white_bg"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <RadioButton
+            android:id="@+id/radioButtonYes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/no" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_shape_button"
+        android:drawableStart="@drawable/ic_event_note_black_24dp"
+        android:drawableLeft="@drawable/ic_event_note_black_24dp"
+        android:drawablePadding="8dp"
+        android:onClick="callTestResultUI"
+        android:text="@string/test_summary"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLevelQueUI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <TextView
+        android:id="@+id/textViewPidInQueUI"
+        android:layout_width="180dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_rectangle"
+        android:gravity="left"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:scrollHorizontally="true"
+        android:text="PID- 123456"
+        android:textIsSelectable="true"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="right"
+        android:text="@string/patient_id"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPidInQueUI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewPidInQueUI" />
+
+    <TextView
+        android:id="@+id/textViewLevelQueUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_rectangle_blue_bg"
+        android:gravity="center_horizontal"
+        android:paddingLeft="8dp"
+        android:paddingTop="4sp"
+        android:paddingRight="8dp"
+        android:paddingBottom="4sp"
+        android:text="Level- 1"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rounded_shape_button"
+        android:drawableStart="@drawable/ic_send_black_24dp"
+        android:drawableLeft="@drawable/ic_send_black_24dp"
+        android:drawablePadding="8dp"
+        android:onClick="callNextQue"
+        android:text="@string/next"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toTopOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/rounded_shape_button"
+        android:drawableStart="@drawable/ic_navigate_before_black_24dp"
+        android:drawableLeft="@drawable/ic_navigate_before_black_24dp"
+        android:drawablePadding="8dp"
+        android:onClick="callPrevQue"
+        android:text="@string/back"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/rounded_shape_button"
+        android:drawableStart="@drawable/ic_home_black_24dp"
+        android:drawableLeft="@drawable/ic_home_black_24dp"
+        android:drawablePadding="8dp"
+        android:onClick="callHomeUI"
+        android:text="@string/home"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/questionnaire"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewPidInQueUI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
