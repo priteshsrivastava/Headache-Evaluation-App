@@ -38,7 +38,7 @@ Run Environment:
    Web service call can be verified by following url:
 	http://localhost:8080/DBAPI.php?apicall=dbReadAllPatientTestBasicInfo
 
-6. Open the Android project 'MyApplication' under Client App Side using Android Studio.
+6. Unzip and Open the Android project 'MyApplication' from 'Client App Side' folder using Android Studio.
 7. Change WEB_SERVER_IP variable as per your configuration in server/DBWebServAPI.java file:
     static final String WEB_SERVER_IP="<IP>:8080";
 8. Build and Run the App.
