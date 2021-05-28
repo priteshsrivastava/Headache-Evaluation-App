@@ -9,7 +9,7 @@ The questionnaires can be asked in Hindi and English language from the patient. 
 
 Technologies/Tools Used:
 ----------------------
-1.Android Studio ver 4.0: IDE for developing android apps
+1. Android Studio ver 4.0: IDE for developing android apps
 2. SQLite: Embedded database software for local/client storage in application software
 3. MySQL: Relational Database Management System to store/retrieve data
 4. Apache: Web server to host REST services
